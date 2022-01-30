@@ -1,6 +1,6 @@
 # Dockerfile from here: https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 
-FROM node:10-alpine
+FROM docker.io/node:10-alpine
 
 # Create app directory
 WORKDIR /myapp
