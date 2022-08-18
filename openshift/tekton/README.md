@@ -45,7 +45,7 @@ EOF
 Run the Pipeline by creating a PipelineRun resource such as the following:
 
 ```bash
-NAMESPACE=myapp
+NAMESPACE=default
 cat << EOF | oc apply -f -
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineRun
@@ -60,7 +60,7 @@ spec:
         type: git
         params:
           - name: revision
-            value: master
+            value: main
           - name: url
             value: https://github.com/andchar/myapp
     - name: image
